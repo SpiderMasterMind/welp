@@ -1,3 +1,27 @@
-%section#top-header.row
-  %h1.col-md-2
-    = link_to "Welp", "/"
+%nav.container-fluid{:style => "background-color: rgb(209,38,43)"}
+  .navbar.row.text-center.justify-content-start.left-margin
+    %a.navbar-brand.col-1{:href => "#"}
+      = image_tag "logo.jpg"    
+    %form.form-inline.col-7
+      .input-group.full-width
+        %input.no-border.form-control{:type => "text"}
+        .input-group-append
+          %span.no-border.input-group-text M
+    .col-1
+      %button.btn Sign Up
+  .row.justify-content-start.left-margin{:style => "background-color: rgb(185,34,38)"}
+    %ul.nav.col-7
+      %li.nav-item
+        %a.nav-link{:href => "#"} Restaurants
+      %li.nav-item
+        %a.nav-link{:href => "#"} Nightlife
+      %li.nav-item
+        %a.nav-link{:href => "#"} Local Services 
+      %span{:style => "color: #fff"}.
+      %li.nav-item
+        %a.nav-link{:href => "#"} Write a Review
+    .col-1
+    #log-in.nav.col-1
+      %a{:href => "#"} Log In
+
+

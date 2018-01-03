@@ -1,0 +1,47 @@
+@media (min-width: 576px) {
+    .full-width {
+        width: 100% !important;
+    }
+}
+
+.left-margin {
+	padding-left: 230px;
+}
+
+.no-border {
+	border: 0;
+}
+
+.navbar-brand img {
+	background-color: rgb(185, 34, 38);
+}
+
+.nav a,
+.input-group-text,
+.btn,
+#log-in {
+	color: #fff;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.input-group-text,
+.btn {
+	font-size: 14px;
+	background-color: rgb(185, 34, 38);
+}
+
+.input-group-text {
+	cursor: pointer;
+}
+
+nav a.nav-link:hover,
+button:hover,
+#log-in:hover,
+.input-group-text:hover {
+  background-color: rgb(146,39,42);
+}
+
+#log-in {
+}
