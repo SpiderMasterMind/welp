@@ -4,12 +4,27 @@
     }
 }
 
-.left-margin {
-	padding-left: 230px;
-}
-
 .no-border {
 	border: 0;
+}
+
+.no-padding {
+	padding: 0
+}
+
+.title-area {
+	background-color: rgb(245,245,245);
+	padding-top: 20px;
+}
+
+// NAVBAR STYLES
+
+nav {
+	background-color: rgb(209,38,43)
+}
+
+.secondary {
+	background-color: rgb(187,34,38)
 }
 
 .navbar-brand img {
@@ -32,9 +47,7 @@
 	background-color: rgb(185, 34, 38);
 }
 
-.input-group-text {
-	cursor: pointer;
-}
+.input-group-text { cursor: pointer; }
 
 nav a.nav-link:hover,
 button:hover,
@@ -43,5 +56,55 @@ button:hover,
   background-color: rgb(146,39,42);
 }
 
-#log-in {
+
+// BUSINESSES (Index) styles
+
+.businesses-wrapper { margin-top: 18px; }
+
+.business, .user-review {
+	border-top: 1px solid rgb(230,230,230);
+	padding-top: 20px;
+}
+
+.business img { border-radius: 2px; }
+
+.main-info a { font-size: 16px; }
+.main-info a:hover { color: #007bff; }
+
+.rating span { color: rgb(102,102,102) }
+.rating span,
+.type a, .address { font-size: 14px; }
+
+.review p { font-size: 13px; }
+.review { margin-left: 8px; }
+
+.review, .reviewer-img { padding: 0; }
+.reviewer-img { line-height: 2.2; }
+
+
+
+.business-review { margin-top: 10px; }
+
+// BUSINESS (Show) styles
+
+.title-area { 
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.title-area .rev-num { font-size: 16px; }
+.title-area h2 { font-weight: 700; }
+// .title-area button {float: right;}
+// .title-area { overflow: hidden; }
+
+.user-review.date { 
+	font-size: 14px;
+	color: rgb(102,102,102);			
+}
+
+.user-review {
+	padding-top: 20px;
+}
+
+.add-business {
+	margin-top: 30px;
 }

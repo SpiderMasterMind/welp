@@ -1,0 +1,17 @@
+.container-fluid
+  .add-business.text-center.col-6.offset-3
+    %h2 Add a Business
+    .form
+      %fieldset
+        .form-group
+          %input.form-control{:type => "text", :id => "business_name", :placeholder => "Business Name"}
+        .form-group
+          %input.form-control{:type => "text", :id => "address", :placeholder => "Street Address"}
+        .form-group
+          %input.form-control{:type => "text", :id => "city", :placeholder => "City"}
+        .form-group
+          %input.form-control{:type => "text", :id => "postcode", :placeholder => "Postcode"}
+        .form-group
+          %input.form-control{:type => "text", :id => "phone", :placeholder => "Phone Number"}
+        .form-group
+          %button.btn.form-control{:type => "submit"} Add Business
