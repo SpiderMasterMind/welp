@@ -20,6 +20,23 @@
       %li.nav-item
         %a.nav-link{:href => "#"} Write a Review
       %li.nav-item
-        %a.nav-link{:href => "#"} Log In
-
-
+        %a.nav-link(href="#" id="dlabel" role="button" data-toggle="dropdown" class="dropdown-toggle" data-target="#") Log In        
+        %b.caret
+        %form.login.px-2.py-1.dropdown-menu(role="menu" aria-labelledby="dlabel")
+          .form-group
+            %input.form-control-sm{:type => "text", :id => "username", :placeholder => "username"}
+          .form-group
+            %input.form-control-sm{:type => "text", :id => "username", :placeholder => "password"}
+          .form-group
+            %button.btn.form-control-sm{:type => "submit"} Submit
+      %li.nav-item
+        %a.nav-link(href="#" id="dlabel" role="button" data-toggle="dropdown" class="dropdown-toggle" data-target="#") Welcome user
+        %b.caret
+        %ul.user-nav.dropdown-menu(role="menu" aria-labelledby="dlabel")
+          %li
+            %a.nav-link(href="#")
+              %span.dd-item Add a Business
+            %a.nav-link(href="#")
+              %span.dd-item Profile
+            %a.nav-link{:href => "#"}
+              %span.dd-item Log Out

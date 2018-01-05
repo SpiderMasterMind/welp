@@ -1,0 +1,23 @@
+.container-fluid
+  .add-review.col-6.offset-3.mt-4
+    %h2 Egg & Bacon's
+    %address
+      14 Egg Lane
+      %br
+      Eggens
+      %br
+      Hampshire
+    .form
+      %fieldset
+        .form-group
+          %select.form-control.col-2
+            %option 5 Stars
+            %option 4 Stars
+            %option 3 Stars
+            %option 2 Stars
+            %option 1 Star
+            %option 0 Stars
+        .form-group
+          %textarea.form-control{:rows => "7", :id => "review", :placeholder => "Enter your review"}
+        .form-group
+          %button.btn.form-control{:type => "submit"} Add Review

@@ -1,21 +1,12 @@
 @media (min-width: 576px) {
-    .full-width {
-        width: 100% !important;
-    }
+    .full-width { width: 100% !important; }
 }
 
-.no-border {
-	border: 0;
-}
+// GLOBAL STYLES
 
-.no-padding {
-	padding: 0
-}
-
-.title-area {
-	background-color: rgb(245,245,245);
-	padding-top: 20px;
-}
+.no-border { border: 0; }
+.no-padding { padding: 0 }
+.divider { border-top: 1px solid rgb(230,230,230); }
 
 // NAVBAR STYLES
 
@@ -31,10 +22,9 @@ nav {
 	background-color: rgb(185, 34, 38);
 }
 
-.nav a,
+.nav-link,
 .input-group-text,
-.btn,
-#log-in {
+.btn {
 	color: #fff;
 	font-size: 13px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -54,57 +44,46 @@ button:hover,
 #log-in:hover,
 .input-group-text:hover {
   background-color: rgb(146,39,42);
+	color: white;
 }
 
+.dd-item { color: black; }
 
 // BUSINESSES (Index) styles
 
 .businesses-wrapper { margin-top: 18px; }
+.business-review { margin-top: 10px; }
 
-.business, .user-review {
-	border-top: 1px solid rgb(230,230,230);
-	padding-top: 20px;
-}
+.review, .reviewer-img { padding: 0; }
 
 .business img { border-radius: 2px; }
 
-.main-info a { font-size: 16px; }
+.review { margin-left: 8px; }
+
 .main-info a:hover { color: #007bff; }
 
 .rating span { color: rgb(102,102,102) }
+
 .rating span,
-.type a, .address { font-size: 14px; }
-
+.type a,
+.address { font-size: 14px; }
 .review p { font-size: 13px; }
-.review { margin-left: 8px; }
+.main-info a { font-size: 16px; }
 
-.review, .reviewer-img { padding: 0; }
 .reviewer-img { line-height: 2.2; }
-
-
-
-.business-review { margin-top: 10px; }
 
 // BUSINESS (Show) styles
 
 .title-area { 
-	padding-bottom: 30px;
+	padding: 20px 0 30px 0;
 	margin-bottom: 30px;
+	background-color: rgb(245,245,245);
 }
+
 .title-area .rev-num { font-size: 16px; }
 .title-area h2 { font-weight: 700; }
-// .title-area button {float: right;}
-// .title-area { overflow: hidden; }
 
 .user-review.date { 
 	font-size: 14px;
 	color: rgb(102,102,102);			
-}
-
-.user-review {
-	padding-top: 20px;
-}
-
-.add-business {
-	margin-top: 30px;
 }
