@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-	#
-  # get 'ui', to: 'ui#index'
+  get 'ui', controller: 'ui', action: 'index'
 
-  get 'ui(/:action)', controller: 'ui'
+
+	namespace :ui do
+		%w(business businesses add_review add_business profile sign_in sign_up).each do |action|
+			get action, action: action
+		end
+	end
 end
