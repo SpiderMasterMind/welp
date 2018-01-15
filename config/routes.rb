@@ -9,6 +9,13 @@ Rails.application.routes.draw do
 			get action, action: action
 		end
 	end
+	
+	resources :users, only: [:create]
+
+	get 'sign_up', to: 'users#new'
+	get 'sign_in', to: 'sessions#new'
+	get 'sign_out', to: 'sessions#destroy'
+
 
 
 end
