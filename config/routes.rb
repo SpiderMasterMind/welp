@@ -11,10 +11,13 @@ Rails.application.routes.draw do
 	end
 	
 	resources :users, only: [:create]
+	resources :sessions, only: [:create]
+
 
 	get 'sign_up', to: 'users#new'
 	get 'sign_in', to: 'sessions#new'
 	get 'sign_out', to: 'sessions#destroy'
+
 
 
 

@@ -1,9 +1,12 @@
 .create-user.offset-1.mt-4
   %h2.pl-4 Create New Account
-  %form.px-4.py-3(role="menu" aria-labelledby="dlabel")
-    .form-group.col-5.no-padding
-      %input.form-control{:type => "text", :id => "username", :placeholder => "username"}
-    .form-group.col-5.no-padding
-      %input.form-control{:type => "text", :id => "username", :placeholder => "password"}
-    .form-group.col-5.no-padding
-      %button.btn.form-control{:type => "submit"} Create
+  = form_for @user do |f|
+    %form.px-4.py-3(role="menu" aria-labelledby="dlabel")
+      .form-group.col-5.no-padding
+        = f.text_field :full_name, label: "full_name", class: "form-control", placeholder: "Full Name"
+      .form-group.col-5.no-padding
+        = f.text_field :email, label: "Email", class: "form-control", placeholder: "Email"
+      .form-group.col-5.no-padding
+        = f.password_field :password, label: "password", class: "form-control", placeholder: "Password"
+      .form-group.col-5.no-padding
+        %input(type="submit" value="Sign Up" class="btn btn-default")

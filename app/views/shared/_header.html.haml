@@ -1,14 +1,13 @@
 %nav.container-fluid
   .navbar.row.text-center.justify-content-start.offset-1.no-padding
-    %a.navbar-brand.no-padding.col-1{:href => "#"}
-      = image_tag "logo.png"
+    = link_to image_tag("logo.png"), root_path, class: "navbar-brand no-padding col-1"
     %form.form-inline.col-7
       .input-group.full-width
         %input.no-border.form-control{:type => "text"}
         .input-group-append
           %span.no-border.input-group-text M
     .col-1
-      %button.btn
+      = link_to "Sign Up", sign_up_path, class: "btn"
 %nav.container-fluid.secondary
   .row.justify-content-start.offset-1
     %ul.nav.col-7
